@@ -40,7 +40,7 @@ export default class View extends Component {
             <table className='table table-striped'>
                 <thead>
                     <tr>
-                    <td>{this.state.movie.map(function(object, index){
+                    <td>{this.state.movie&&this.state.movie.map(function(object, index){
                      return(
                     <div>
                      <h1>{object.m_title}</h1>
